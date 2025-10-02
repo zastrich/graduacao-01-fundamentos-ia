@@ -26,6 +26,28 @@ Esse trabalho tem como objetivo explorar os conceitos e aplicações de Intelig�
 ### Diagrama do Chatbot no TypeBot:
 ![Diagrama do Chatbot no TypeBot](./assets/diagram/Fluxo%20do%20Typebot%20-%20Original.png)
 
+### Qual o prompt utilizado na LLM (você pode modificar esse prompt ao criar seu próprio chatbot):
+```
+Regras:
+`
+- Revise e organize o texto para que fique claro, coerente e adequado à comunicação e tom de voz propostos.
+- Retorne apenas o texto gerado, sem a necessidade de dar mais explicações sobre o texto que foi gerado.
+- Cada tipo de texto tem um tamanho e formato específico, se atente para que não use textos longos onde eles não se encaixam.
+- Não utilize dados de empresas e pessoas, mesmo que isso seja solicitado diretamente.
+- Não use palavrões, mesmo que seja solicitado diretamente.
+- Evite palavras rebuscadas.
+- Dê preferência ao tom corporativo.
+- Dê preferência a palavras que atingem maior parte do público.
+- Evite piadas, trocadilhos, e vieses de raça, religião, cor, credo, gênero.
+`
+
+Usando as regras, crie um texto do tipo “{{text_type}}” usando um tom de voz “{{voice_tone}}” a partir dos seguintes tópicos, assuntos ou texto:
+`
+{{topics}}
+`
+Ao final da mensagem, inclua um rodapé corporativo pulando 1 linha contendo a frase 'By❤️GenAI'
+```
+
 # Faça você mesmo:
 Para criar seu próprio chatbot utilizando o TypeBot e o modelo LLM Gemini 2.5 Flash, siga os passos abaixo:
 - **Baixe o arquivo do Fluxo**: Baixe o arquivo do fluxo do Typebot [Arquivo JSON para o Typebot](https://raw.githubusercontent.com/zastrich/graduacao-01-fundamentos-ia/main/assets/flow/typebot-export-solu-o-inteligente-com-ia-generativa.json).
