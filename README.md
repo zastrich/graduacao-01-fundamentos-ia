@@ -15,6 +15,11 @@ Esse trabalho tem como objetivo explorar os conceitos e aplicações de Intelig�
 - Acesse o chatbot criado no TypeBot através do link: [Chatbot no TypeBot](https://typebot.co/fundamentos-gen-ia)
 - Acesse uma plataforma mock com o TypeBot integrado a ela: [Chatbot TypeBot integrado](https://codepen.io/zastrich/full/pvgzjEV) `balão vermelho no canto inferior direito da tela`
 
+# Prints do Chatbot em ação:
+### Acesse aqui os prints do chatbot em ação: [PRINTS.md](./PRINTS.md)
+
+# Como funciona o chatbot:
+
 ### Diagrama do Fluxo de Interação:
 ![Diagrama do Fluxo de Interação](./assets/diagram/Fluxo%20do%20Typebot.excalidraw.png)
 
