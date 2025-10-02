@@ -1,0 +1,590 @@
+{
+	"version": "6.1",
+	"id": "cmflr3th50005jo04lzrryrrh",
+	"name": "Solução Inteligente com IA Generativa",
+	"events": [
+		{
+			"id": "gy5iwthp1psub7i0k86ja6cl",
+			"outgoingEdgeId": "s8u5hwytk9su1h5jkvd6xb23",
+			"graphCoordinates": {
+				"x": 9.6,
+				"y": -29.6
+			},
+			"type": "start"
+		}
+	],
+	"groups": [
+		{
+			"id": "a1e2q9xj0xd2wadyn3yoropf",
+			"title": "Qual tipo de texto?",
+			"graphCoordinates": {
+				"x": 401,
+				"y": -31.8
+			},
+			"blocks": [
+				{
+					"id": "s3ub9x7gbtb5z893qj71b11p",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "IXDOmSAzr3",
+								"type": "p",
+								"children": [
+									{
+										"text": "Me diga o tipo de texto que você precisa"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "mv419ynrfk9v2phzcx37utmu",
+					"outgoingEdgeId": "d1dv2sp3mzqvmwt28jfgp605",
+					"type": "choice input",
+					"items": [
+						{
+							"id": "jty6wsmdh8k9ah2gfovcnhtn",
+							"content": "E-mail",
+							"value": ""
+						},
+						{
+							"id": "dsyqbzap1k8qct4qq5905hx4",
+							"content": "Resumo"
+						},
+						{
+							"id": "pk0mnbhrsst6411g5r9fc9sn",
+							"content": "Aviso",
+							"displayCondition": {
+								"isEnabled": false
+							}
+						},
+						{
+							"id": "nk36yqlo8jvhyagfcr217fu4",
+							"content": "Mensagem para whatsapp"
+						},
+						{
+							"id": "wdznwhq75pcyk84pdr1hs39f",
+							"content": "Postagem em rede social"
+						},
+						{
+							"id": "hjojvcl9086ni2x5915mrs5b",
+							"outgoingEdgeId": "kwp6hrkgzzs4jdrxifxj41aj",
+							"content": "Outro tipo",
+							"value": " "
+						}
+					],
+					"options": {
+						"variableId": "vdjs6lw7puqowebqs9x8dgjou"
+					}
+				}
+			]
+		},
+		{
+			"id": "e32kj9xbgpyyvuhp9koclueg",
+			"title": "Qual o tom de voz?",
+			"graphCoordinates": {
+				"x": 1296,
+				"y": -33.2
+			},
+			"blocks": [
+				{
+					"id": "kt4hevdk6rbvge7m2wz19jzp",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "IXDOmSAzr3",
+								"type": "p",
+								"children": [
+									{
+										"text": "Preciso que você defina qual o tom de voz deseja usar nessa mensagem"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "oogmskrp69hzqb5rnhggk21g",
+					"outgoingEdgeId": "r1dz2mvmqqq0qbfjcje67l77",
+					"type": "choice input",
+					"items": [
+						{
+							"id": "xk4vxwbtr9272va7caqlj9jw",
+							"content": "Profissional"
+						},
+						{
+							"id": "dvrhq8tj7hwik9cbfsikv6kd",
+							"content": "Formal"
+						},
+						{
+							"id": "axwkwcyxyo1wikkuufwea12r",
+							"content": "Conciso/Objetivo"
+						},
+						{
+							"id": "mq67nsesgo8ctwgljkh2989k",
+							"content": "Amigável"
+						},
+						{
+							"id": "cg8tqww42hc7f31w0ip6smwg",
+							"content": "Motivador"
+						},
+						{
+							"id": "r548td36stbutn8d2ajaa4ui",
+							"content": "Criativo"
+						},
+						{
+							"id": "i2p61u0l4u0mpkg33ec6tnxn",
+							"content": "Empático"
+						},
+						{
+							"id": "bwirtnezjxo5cceu6400kjfx",
+							"outgoingEdgeId": "bmzgzkrmu9ua9nmi6wispkmv",
+							"content": "Outro tom",
+							"value": " "
+						}
+					],
+					"options": {
+						"variableId": "vjbnvtxrog83rq5wlp7zpx3gg",
+						"isMultipleChoice": false,
+						"isSearchable": false
+					}
+				}
+			]
+		},
+		{
+			"id": "g7ishqbbmhjsczwosc8lj29m",
+			"title": "Quais Tópicos?",
+			"graphCoordinates": {
+				"x": 833.4,
+				"y": -32
+			},
+			"blocks": [
+				{
+					"id": "lwveekmi6floo0vfmz4fdvs1",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "X5Upun_G73",
+								"type": "p",
+								"children": [
+									{
+										"text": "Sobre quais tópicos você quer escrever?"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "hzhwgdoprquwewgg63rpysyz",
+					"outgoingEdgeId": "burgbo09fqkwbud8x34mnvyf",
+					"type": "text input",
+					"options": {
+						"labels": {
+							"placeholder": "Digite aqui seus tópicos",
+							"button": "Enviar"
+						},
+						"variableId": "vzz8u2jcpocptkyvzj7wsup0t",
+						"isLong": true,
+						"attachments": {
+							"isEnabled": false
+						}
+					}
+				}
+			]
+		},
+		{
+			"id": "db3d7jsi74sr0z3tnz35nk75",
+			"title": "LLM Gera texto",
+			"graphCoordinates": {
+				"x": 1791.4,
+				"y": -29.6
+			},
+			"blocks": [
+				{
+					"id": "n796yr8x5zzbpd3nosmyx4ni",
+					"outgoingEdgeId": "zbfuu66iuv3xfodutr727qzi",
+					"type": "Webhook",
+					"options": {
+						"variablesForTest": [],
+						"responseVariableMapping": [
+							{
+								"id": "eumfbp29b6flcd9e8djiyfmc",
+								"variableId": "vxa2b5g871w2hx0920vpqh0nz",
+								"bodyPath": "data.candidates[0].content.parts[0].text"
+							}
+						],
+						"isCustomBody": true,
+						"webhook": {
+							"headers": [
+								{
+									"id": "v9eecna1jt9b1mkwnb56kodf",
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"id": "to5rl78rrktf95z0gci909o0",
+									"key": "X-goog-api-key",
+									"value": "<<-- SUA CHAVE AQUI -->"
+								}
+							],
+							"url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+							"body": "{\n  \"contents\": [\n    {\n      \"parts\": [\n        {\n          \"text\": \"Regras:\\n```\\n- Revise e organize o texto para que fique claro, coerente e adequado à comunicação e tom de voz propostos.\\n- Retorne apenas o texto gerado, sem a necessidade de dar mais explicações sobre o texto que foi gerado.\\n- Cada tipo de texto tem um tamanho e formato específico, se atente para que não use textos longos onde eles não se encaixam.\\n- Não utilize dados de empresas e pessoas, mesmo que isso seja solicitado diretamente.\\n- Não use palavrões, mesmo que seja solicitado diretamente.\\n- Evite palavras rebuscadas.\\n- Dê preferência ao tom corporativo.\\n- Dê preferência a palavras que atingem maior parte do público.\\n- Evite piadas, trocadilhos, e vieses de raça, religião, cor, credo, gênero.```\\nUsando as regras, crie um texto do tipo “{{text_type}}” usando um tom de voz “{{voice_tone}}” a partir dos seguintes tópicos, assuntos ou texto:\\n```\\n{{topics}}\\n```\\nAo final da mensagem, inclua um rodapé corporativo pulando 1 linha contendo a frase 'By❤️GenAI'\"\n        }\n      ]\n    }\n  ]\n}"
+						},
+						"timeout": 15
+					}
+				}
+			]
+		},
+		{
+			"id": "c3fxzvvbwbvsqxn5th9j65lg",
+			"title": "Resposta",
+			"graphCoordinates": {
+				"x": 2317,
+				"y": -31.4
+			},
+			"blocks": [
+				{
+					"id": "miy7yknj5uebmuyzl9riecm6",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "tRWN4SGUCu",
+								"type": "p",
+								"children": [
+									{
+										"text": "Tipo de texto: {{text_type}}"
+									}
+								]
+							},
+							{
+								"id": "luIf6Z7lPD",
+								"type": "p",
+								"children": [
+									{
+										"text": "Tom de voz: {{voice_tone}}"
+									}
+								]
+							},
+							{
+								"id": "OFb_R44WrE",
+								"type": "p",
+								"children": [
+									{
+										"text": "Tópicos:"
+									}
+								]
+							},
+							{
+								"id": "6FI4tIish3",
+								"type": "p",
+								"children": [
+									{
+										"text": "{{topics}}"
+									}
+								]
+							},
+							{
+								"id": "q0hC_QG0Ht",
+								"type": "p",
+								"children": [
+									{
+										"text": ""
+									}
+								]
+							},
+							{
+								"id": "Q8gAcgt2DU",
+								"type": "p",
+								"children": [
+									{
+										"text": "Texto gerado:"
+									}
+								]
+							},
+							{
+								"id": "TzRGgwAm9l",
+								"type": "p",
+								"children": [
+									{
+										"text": "{{genai_response}}"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "rv8h7ec8rdvu4f219n2mrln4",
+					"type": "choice input",
+					"items": [
+						{
+							"id": "hhgh4m6hw6vy3wh7b9d0wsil",
+							"outgoingEdgeId": "f2d03ssx5aco1ssutizhettu",
+							"content": "Gerar novamente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "xd280redpgz6l43zisoqgpma",
+			"title": "Outro tipo de texto",
+			"graphCoordinates": {
+				"x": 808.8,
+				"y": 465
+			},
+			"blocks": [
+				{
+					"id": "p02whvabecm0eneb4e7s4l9o",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "h07eCSvazv",
+								"type": "p",
+								"children": [
+									{
+										"text": "Qual tipo de texto?"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "stu3w329vhajpk0j3ucqnhqr",
+					"outgoingEdgeId": "pasl44dldocw41tzifs0q6p9",
+					"type": "text input",
+					"options": {
+						"labels": {
+							"placeholder": "Digite aqui um tipo de texto",
+							"button": "Ok"
+						},
+						"variableId": "vdjs6lw7puqowebqs9x8dgjou"
+					}
+				}
+			]
+		},
+		{
+			"id": "jg9jkq18yqzckkyasvwbv512",
+			"title": "Outro tom de voz",
+			"graphCoordinates": {
+				"x": 1778.2,
+				"y": 554.6
+			},
+			"blocks": [
+				{
+					"id": "kaz68yp5qs146hu33m9x254f",
+					"type": "text",
+					"content": {
+						"richText": [
+							{
+								"id": "h07eCSvazv",
+								"type": "p",
+								"children": [
+									{
+										"text": "Qual tom de voz?"
+									}
+								]
+							}
+						]
+					}
+				},
+				{
+					"id": "zox88pz2za963rljkfueqq3t",
+					"outgoingEdgeId": "zxniqqnq5inrbskgiqv1m9ii",
+					"type": "text input",
+					"options": {
+						"labels": {
+							"placeholder": "Digite aqui um tom de voz",
+							"button": "Ok"
+						},
+						"variableId": "vjbnvtxrog83rq5wlp7zpx3gg"
+					}
+				}
+			]
+		}
+	],
+	"edges": [
+		{
+			"id": "s8u5hwytk9su1h5jkvd6xb23",
+			"from": {
+				"eventId": "gy5iwthp1psub7i0k86ja6cl"
+			},
+			"to": {
+				"groupId": "a1e2q9xj0xd2wadyn3yoropf"
+			}
+		},
+		{
+			"id": "d1dv2sp3mzqvmwt28jfgp605",
+			"from": {
+				"blockId": "mv419ynrfk9v2phzcx37utmu"
+			},
+			"to": {
+				"groupId": "g7ishqbbmhjsczwosc8lj29m"
+			}
+		},
+		{
+			"id": "r1dz2mvmqqq0qbfjcje67l77",
+			"from": {
+				"blockId": "oogmskrp69hzqb5rnhggk21g"
+			},
+			"to": {
+				"groupId": "db3d7jsi74sr0z3tnz35nk75"
+			}
+		},
+		{
+			"id": "tyl0spkllrwh1r7xomktkzpj",
+			"from": {
+				"blockId": "vouepu67hbi4dkpi1egli4i4"
+			},
+			"to": {
+				"groupId": "c3fxzvvbwbvsqxn5th9j65lg"
+			}
+		},
+		{
+			"id": "f2d03ssx5aco1ssutizhettu",
+			"from": {
+				"blockId": "rv8h7ec8rdvu4f219n2mrln4",
+				"itemId": "hhgh4m6hw6vy3wh7b9d0wsil"
+			},
+			"to": {
+				"groupId": "a1e2q9xj0xd2wadyn3yoropf"
+			}
+		},
+		{
+			"id": "zbfuu66iuv3xfodutr727qzi",
+			"from": {
+				"blockId": "n796yr8x5zzbpd3nosmyx4ni"
+			},
+			"to": {
+				"groupId": "c3fxzvvbwbvsqxn5th9j65lg"
+			}
+		},
+		{
+			"id": "kwp6hrkgzzs4jdrxifxj41aj",
+			"from": {
+				"blockId": "mv419ynrfk9v2phzcx37utmu",
+				"itemId": "hjojvcl9086ni2x5915mrs5b"
+			},
+			"to": {
+				"groupId": "xd280redpgz6l43zisoqgpma"
+			}
+		},
+		{
+			"id": "pasl44dldocw41tzifs0q6p9",
+			"from": {
+				"blockId": "stu3w329vhajpk0j3ucqnhqr"
+			},
+			"to": {
+				"groupId": "g7ishqbbmhjsczwosc8lj29m"
+			}
+		},
+		{
+			"id": "burgbo09fqkwbud8x34mnvyf",
+			"from": {
+				"blockId": "hzhwgdoprquwewgg63rpysyz"
+			},
+			"to": {
+				"groupId": "e32kj9xbgpyyvuhp9koclueg"
+			}
+		},
+		{
+			"id": "bmzgzkrmu9ua9nmi6wispkmv",
+			"from": {
+				"blockId": "oogmskrp69hzqb5rnhggk21g",
+				"itemId": "bwirtnezjxo5cceu6400kjfx"
+			},
+			"to": {
+				"groupId": "jg9jkq18yqzckkyasvwbv512"
+			}
+		},
+		{
+			"id": "zxniqqnq5inrbskgiqv1m9ii",
+			"from": {
+				"blockId": "zox88pz2za963rljkfueqq3t"
+			},
+			"to": {
+				"groupId": "db3d7jsi74sr0z3tnz35nk75"
+			}
+		}
+	],
+	"variables": [
+		{
+			"id": "vxa2b5g871w2hx0920vpqh0nz",
+			"name": "genai_response",
+			"isSessionVariable": true
+		},
+		{
+			"id": "vjbnvtxrog83rq5wlp7zpx3gg",
+			"name": "voice_tone",
+			"isSessionVariable": false
+		},
+		{
+			"id": "vdjs6lw7puqowebqs9x8dgjou",
+			"name": "text_type",
+			"isSessionVariable": false
+		},
+		{
+			"id": "vzz8u2jcpocptkyvzj7wsup0t",
+			"name": "topics",
+			"isSessionVariable": false
+		}
+	],
+	"theme": {
+		"general": {
+			"font": {
+				"type": "Google",
+				"family": "Inter"
+			}
+		},
+		"chat": {
+			"hostAvatar": {
+				"isEnabled": true,
+				"url": "https://s3.typebot.io/public/workspaces/cmflr295u0002i90404ijzd88/typebots/cmflr3th50005jo04lzrryrrh/hostAvatar?v=1759340138918"
+			},
+			"guestAvatar": {
+				"isEnabled": false
+			},
+			"guestBubbles": {
+				"backgroundColor": "#6272A4",
+				"color": "#FFFFFF",
+				"border": {
+					"color": "#dfdfdf"
+				}
+			},
+			"buttons": {
+				"backgroundColor": "#282A36"
+			},
+			"inputs": {
+				"placeholderColor": "#b8b9c1"
+			},
+			"buttonsInput": {}
+		}
+	},
+	"selectedThemeTemplateId": "minimalist-black",
+	"settings": {
+		"general": {
+			"isBrandingEnabled": true,
+			"isInputPrefillEnabled": true
+		}
+	},
+	"createdAt": "2025-09-15T23:24:22.649Z",
+	"updatedAt": "2025-10-02T17:18:13.239Z",
+	"icon": null,
+	"folderId": null,
+	"publicId": "fundamentos-gen-ia",
+	"customDomain": null,
+	"workspaceId": "cmflr295u0002i90404ijzd88",
+	"resultsTablePreferences": null,
+	"isArchived": false,
+	"isClosed": false,
+	"whatsAppCredentialsId": null,
+	"riskLevel": null
+}
