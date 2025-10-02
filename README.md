@@ -8,8 +8,8 @@ Esse trabalho tem como objetivo explorar os conceitos e aplicações de Intelig�
 - **TypeBot**: Plataforma para criação de chatbots interativos.
 - **LLM Gemini 2.5 Flash**: Modelo de linguagem da Google utilizado para geração de texto.
 
-# Vídeo de demonstração:
-### **WIP**
+# Vídeo de demonstração (clique na imagem para assistir no youtube):
+[![Watch the video](https://img.youtube.com/vi/3ud96rwcClQ/maxresdefault.jpg)](https://youtu.be/3ud96rwcClQ)
 
 # Teste você mesmo:
 - Acesse o chatbot criado no TypeBot através do link: [Chatbot no TypeBot](https://typebot.co/fundamentos-gen-ia)
